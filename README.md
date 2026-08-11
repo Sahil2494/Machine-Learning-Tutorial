@@ -5,6 +5,7 @@ Implementations of machine learning algorithms from scratch in Python. The repos
 ## Current Models
 
 - Linear Regression
+- SVM
 
 ## Repository Structure
 
