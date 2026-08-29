@@ -6,6 +6,8 @@ Implementations of machine learning algorithms from scratch in Python. The repos
 
 - Linear Regression
 - SVM
+- Decision tree
+- Logistic Regression
 
 ## Repository Structure
 
@@ -29,10 +31,6 @@ Create and activate a virtual environment, then install the dependencies:
 ```bash
 pip install -r requirements.txt
 ```
-
-## Usage
-
-The `Linear_Regression/model.py` file contains a NumPy implementation of linear regression trained with gradient descent. The notebook in `Linear_Regression/linear_Regression.ipynb` demonstrates the model on the salary dataset.
 
 ## Planned Additions
 
