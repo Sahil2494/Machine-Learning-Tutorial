@@ -7,6 +7,7 @@ Implementations of machine learning algorithms from scratch in Python.
 - SVM
 - Decision tree
 - Logistic Regression
+- Random Forest Classifier
 
 ## Repository Structure
 
