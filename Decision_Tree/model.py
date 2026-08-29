@@ -3,11 +3,11 @@ from collections import Counter
 
 class Node:
     def __init__(self, feature=None, threshold=None, left=None, right=None, *, value=None):
-        self.feature = feature
-        self.threshold = threshold
-        self.left = left
+        self.feature = feature      #feature selected to split into child nodes
+        self.threshold = threshold  #threshold value of that feature to split 
+        self.left = left            #left node to this curr node
         self.right = right
-        self.value = value
+        self.value = value          #if this is leaf node, then the class of this node (result)
     
     def is_leaf_node(self):
         return self.value is not None
@@ -30,7 +30,7 @@ class DecisionTree:
 
     
     def _grow_tree(self, X, y, depth=0):
-        no_of_samples, no_of_features = X.shape
+        no_of_samples, total_features = X.shape
         no_of_labels = len(np.unique(y))
 
         #check stopping condition
@@ -42,7 +42,7 @@ class DecisionTree:
             leaf_value = self._most_common_value(y)
             return Node(value=leaf_value)
         
-        feat_idxs = np.random.choice(no_of_features, self.no_of_features, replace=False)
+        feat_idxs = np.random.choice(total_features, self.no_of_features, replace=False)
         
         #find the best split
         best_feature, best_threshold = self._best_split(X, y, feat_idxs)
