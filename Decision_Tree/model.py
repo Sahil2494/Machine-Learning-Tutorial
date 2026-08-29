@@ -73,7 +73,7 @@ class DecisionTree:
     
 
     def _best_split(self, X, y, feat_idxs):
-        best_gain=-1
+        best_gain=0
         split_idx, split_threshold = None, None
 
         for feat_idx in feat_idxs:
