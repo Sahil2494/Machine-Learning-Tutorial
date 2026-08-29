@@ -1,7 +1,6 @@
 # Machine Learning from Scratch
 
-Implementations of machine learning algorithms from scratch in Python. The repository currently includes linear regression, with more models planned.
-
+Implementations of machine learning algorithms from scratch in Python.
 ## Current Models
 
 - Linear Regression
